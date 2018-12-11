@@ -15,7 +15,7 @@ public class Rolls {
         int T=Integer.parseInt(args[0]);//表示投掷骰子的次数
         int SIDES=6;//表示骰子的6个面
         Counter [] rolls=new Counter[SIDES+1];//创建了容量为7 的Counter数组
-        for (int i = 1; i <= SIDES; i++) { //下标为0的位置没有赋值
+        for (int i = 1; i <= SIDES; i++) { //下标为0的位置没有赋值 即实现了面面对应
             rolls[i]=new Counter(i+"'s");//创建了6个Counter对象在rolls数组中 代表6个面
         }
         for (int t = 0; t < T; t++) {
